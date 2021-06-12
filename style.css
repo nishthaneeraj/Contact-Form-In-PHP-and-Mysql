@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    flex-direction:column;
+    background-color: rgba(245, 4, 44, 0.891);
+    
+    
+}
+h1,
+.head{
+    font-family: 'Aclonica', sans-serif;
+    padding:5px;
+    margin:10px;
+    text-align:center;
+}
+form{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background: white;
+    width:60vh;
+    padding:10px;
+    border-radius:10px;
+    font-family: "Poppins", sans-serif;
+}
+input,
+textarea{
+    margin:10px;
+    padding:10px;
+    outline:none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    resize:none;
+    width:40vh;
+}
+input::placeholder,
+textarea::placeholder{
+    font-family: "Poppins", sans-serif;
+    color:rgb(214, 10, 44);
+}
+
+
+
+.submit{
+    margin:10px;
+      line-height: 1.5;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding:10px 28px;
+    display: inline-block;
+    border-radius: 30px;
+    color:#fff;
+    
+    background:#e02f6b;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow:hidden;
+    vertical-align:middle;
+    transition: color 0.3s ease;
+   
+  }
+
+/* Media Quieries */
+@media  only screen and  (max-width:400px){
+    form{
+        width:40vh;
+    }
+    input,
+    textarea{
+        width:30vh;
+        padding: 5px;
+        margin:5px;
+    }
+    h1{
+        font-size:1rem;
+    }
+    input::placeholder,
+    textarea::placeholder{
+        font-family: "Poppins", sans-serif;
+        color:rgb(214, 10, 44);
+        font-size:12px;
+    }
+    .submit{
+        padding:10px 20px;
+        font-size:10px;
+    }
+}
+@media  only screen and  (max-width:460px){
+    form{
+        width:50vh;
+    }
+    input,
+    textarea{
+        width:30vh;
+        padding: 5px;
+        margin:5px;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    input::placeholder,
+    textarea::placeholder{
+        font-family: "Poppins", sans-serif;
+        color:rgb(214, 10, 44);
+        font-size:10px;
+    }
+    .submit{
+        padding:5px 10px;
+        font-size:10px;
+    }
+}
+@media  only screen and  (max-width:410px){
+    form{
+        width:40vh;
+    }
+    input,
+    textarea{
+        width:35vh;
+        padding: 5px;
+        margin:5px;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    input::placeholder,
+    textarea::placeholder{
+        font-family: "Poppins", sans-serif;
+        color:rgb(214, 10, 44);
+        font-size:10px;
+    }
+    .submit{
+        padding:10px 15px;
+        font-size:12px;
+    }
+}
+@media  only screen and  (max-width:280px){
+    form{
+        width:35vh;
+    }
+    input,
+    textarea{
+        width:25vh;
+        padding: 5px;
+        margin:5px;
+    }
+    h1{
+        font-size:0.9rem;
+    }
+    input::placeholder,
+    textarea::placeholder{
+        font-family: "Poppins", sans-serif;
+        color:rgb(214, 10, 44);
+        font-size:10px;
+    }
+    .submit{
+        padding:5px 10px;
+        font-size:10px;
+    }
+}
+
